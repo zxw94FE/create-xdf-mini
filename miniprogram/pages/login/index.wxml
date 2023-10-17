@@ -1,0 +1,32 @@
+<!--pages/login/index.wxml-->
+<navigation-bar ext-class='bar-class' background="transparent"/>
+<view id="login_container">
+	<view class="header">
+		<image class="logo-image" src="{{logoImage}}" alt="" />
+		<image class="title-image" src="{{titleImage}}" alt="" />
+	</view>
+	<view class="center">
+		<p class="desc">请使用您注册xxxx系统的手机号进行登录</p>
+		<view class="input-box">
+			<t-input label="手机号" placeholder="请输入手机号" type="number" value="{{phone}}" data-type='phone' maxlength="{{11}}" clearable bindchange="changeInput" bindclear="clearPhone" />
+			<t-input label="验证码" placeholder="请输入验证码" type="number" value="{{code}}" data-type='code' maxlength="{{6}}" bindchange="changeInput" />
+			<view class="veri-code">
+				<text wx:if="{{!countDown}}" class="get-veri-code" bind:tap="getVeriCode">获取验证码</text>
+				<text wx:else="" class="veri-code-timer">{{countDown}}秒后重新获取</text>
+			</view>
+		</view>
+		<t-button hover-class="none" class="login-button" theme="primary" disabled="{{loginDisabled}}" bind:tap="login">登录</t-button>
+	</view>
+	<view class="bottom" bind:tap="changeRadio">
+		<t-icon wx:if="{{radioStatus}}" name="check-circle-filled" size="18px" color="#00CC66" data-name="check-circle-filled" />
+		<t-icon wx:else name="circle" size="18px" data-name="circle" />
+		<span class="user-agreement">
+			我已详细阅读并同意
+			<span class="target" data-type='userRegist' catchtap="toProtocol">《用户注册协议》</span>
+			和
+			<span class="target" data-type='userPrivacy' catchtap="toProtocol">《私库云书个人信息及隐私保护政策》</span>
+		</span>
+	</view>
+	<t-toast id="t-toast" />
+    <captcha id="captcha" wx:if="{{needCaptcha}}" gt="{{gt}}" challenge="{{challenge}}" offline="{{offline}}" bindonSuccess="captchaSuccess" bindonError="captchaError" product="bind" verify="{{verify}}" />
+</view>

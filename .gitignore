@@ -1,0 +1,8 @@
+.idea
+.DS_Store
+node_modules
+miniprogram_npm
+package-lock.json
+.vscode
+miniprogram/pnpm-lock.yaml
+project.private.config.json

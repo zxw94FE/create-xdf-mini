@@ -1,0 +1,5 @@
+<navigation-bar ext-class='bar-class' background="transparent" />
+<view class="container">
+  <image class='logo' src="{{logoImage}}" />
+  <image class='title' src="{{titleImage}}"/>
+</view>

@@ -1,0 +1,35 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/login/index",
+    "pages/webview/index"
+  ],
+  "usingComponents": {
+    "t-navbar": "tdesign-miniprogram/navbar/navbar",
+    "navigation-bar": "miniprograms-navigation-bar"
+  },
+  "__usePrivacyCheck__": true,
+  "window": {
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTextStyle": "black",
+    "navigationStyle": "custom"
+  },
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "custom": true,
+    "list": [
+      {
+        "pagePath": "pages/home/index"
+      },
+      {
+        "pagePath": "pages/mine/index"
+      }
+    ]
+  },
+  "plugins": {
+    "geetestcaptcha": {
+      "version": "1.3.4",
+      "provider": "wxefa63d84fe9f64a2"
+    }
+  }
+}

@@ -1,0 +1,17 @@
+.wrapper {
+  --td-tab-bar-border-color: #e7e7e7;
+  --td-tab-bar-bg-color: #fff;
+  --td-tab-bar-height: 112rpx;
+  --td-tab-bar-active-color: #0c6;
+
+
+  .custom-tabbar {
+    height: calc(112rpx + env(safe-area-inset-bottom));
+    box-shadow: inset 0rpx 2rpx 0rpx 0rpx #E7E7E7;
+  }
+
+  .custom-tabbar-item {
+    margin: 0;
+    padding: 0;
+  }
+}

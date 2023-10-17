@@ -1,0 +1,102 @@
+/* pages/login/index.wxss */
+page {
+background: #F2F8F6;
+}
+
+#login_container {
+	height: 100%;
+	display: flex;
+    justify-content: space-between;
+	flex-direction: column;
+}
+
+.header {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	.logo-image {
+		width: 192rpx;
+		height: 192rpx;
+	}
+	.title-image {
+		width: 400rpx;
+		height: 60rpx;
+		margin-top: 40rpx;
+	}
+}
+
+.center {
+	position: absolute;
+    width: 750rpx;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	padding: 0 48rpx;
+	.desc {
+		display: block;
+		font-size: 28rpx;
+		color: rgba(0,0,0,0.9);
+		text-align: center;
+		margin-bottom: 32rpx;
+	}
+	.input-box {
+		margin: auto;
+		background-color: #fff;
+		overflow: hidden;
+		border-radius: 16rpx;
+		margin-bottom: 48rpx;
+		position: relative;
+	}
+	.veri-code {
+		position: absolute;
+		right: 0;
+		bottom: 32rpx;
+		padding: 0 16rpx;
+		font-size: 32rpx;
+		line-height: 48rpx;
+		border-left: 2rpx solid rgba(0,0,0,0.26);
+		.get-veri-code {
+			color: #00CC66;
+		}
+		.veri-code-timer {
+			color: rgba(0,0,0,0.26);
+		}
+	}
+	.login-button {
+		display: block;
+		width: 100%;
+		height: 96rpx;
+		line-height: 96rpx;
+		border-radius: 48rpx;
+		border: none;
+		box-shadow: none;
+	}
+	.login-button.t-button--disabled {
+		background-color: #A6A6A6;
+	}
+}
+
+.bottom {
+	position: absolute;
+	bottom: 42rpx;
+	padding: 0 48rpx;
+	display: flex;
+	.user-agreement {
+		margin-left: 8rpx;
+		font-size: 24rpx;
+	}
+	.target {
+		color: #00CC66;
+	}
+}
+
+.web-view-container {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 2;
+}

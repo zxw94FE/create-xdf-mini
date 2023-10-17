@@ -1,0 +1,6 @@
+node_modules
+miniprogram_npm
+typings
+miniprogram/utils/bonree
+miniprogram/utils/cos
+miniprogram/utils/sentry

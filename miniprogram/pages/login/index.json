@@ -1,0 +1,9 @@
+{
+	"usingComponents": {
+		"captcha": "plugin://geetestcaptcha/captcha",
+		"t-button": "tdesign-miniprogram/button/button",
+		"t-icon": "tdesign-miniprogram/icon/icon",
+		"t-input": "tdesign-miniprogram/input/input",
+		"t-toast": "tdesign-miniprogram/toast/toast"
+	}
+}

@@ -1,0 +1,5 @@
+<view class='container-webview'>
+  <view class="content" hover-class="none" hover-stop-propagation="false">
+    <web-view wx:if="{{url}}" src="{{url}}" bindload="loadSucceed" binderror="loadErr"></web-view>
+  </view>
+</view>
