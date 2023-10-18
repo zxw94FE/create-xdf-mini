@@ -1,7 +1,7 @@
 {
   "name": "create-xdf-mini",
   "version": "1.0.0",
-  "description": "mini 项目初始化工具",
+  "description": "xdf微信小程序模版",
   "scripts": {
     "setup": "npm install --force --registry http://uneng.staff.xdf.cn/nexus/repository/npmjs.org/",
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -11,13 +11,10 @@
     "lint": "eslint .",
     "cli": "node conf/cli.js"
   },
-  "bin": {
-    "create-xdf-mini": "./bin/create-xdf-mini"
-  },
   "keywords": [
     "微信小程序",
     "ts",
-    "微信小程序脚手架"
+    "t-design"
   ],
   "author": "zxw94FE",
   "license": "MIT",
@@ -34,11 +31,6 @@
     "dayjs": "^1.11.10",
     "js-base64": "^3.7.5",
     "miniprograms-navigation-bar": "^2.0.2",
-    "tdesign-miniprogram": "^1.2.3",
-    "chalk": "^3.0.0",
-    "commander": "^4.0.1",
-    "download-git-repo": "^3.0.2",
-    "inquirer": "^7.0.1",
-    "ora": "^4.0.3"
+    "tdesign-miniprogram": "^1.2.3"
   }
 }
